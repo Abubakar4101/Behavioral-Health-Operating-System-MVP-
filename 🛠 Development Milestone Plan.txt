@@ -1,0 +1,238 @@
+🛠 Development Milestone Plan
+
+Behavioral Health Operating System (MVP)
+
+Total Timeline: ~10–12 weeks
+Goal: Production-ready, HIPAA-aligned MVP for real clinical use
+Approach: Incremental milestones with usable deliverables
+
+🔹 Milestone 0 — Planning & Architecture (Week 1)
+
+Deliverables
+
+Final MVP scope confirmation
+
+MVP screen list finalized
+
+System architecture design
+
+Database schema (v1)
+
+Role model:
+
+Clinician
+
+Admin
+
+Supabase project setup
+
+Row Level Security (RLS) baseline
+
+Audit log table design
+
+CI/CD (Vercel)
+
+Outcome
+✔ Solid, secure foundation
+
+🔹 Milestone 1 — Authentication & Security (Week 2)
+
+Features
+
+Login / logout
+
+Role-based access control
+
+Protected routes
+
+Session timeout
+
+Password rules
+
+Login audit logging
+
+Outcome
+✔ Secure access compliant with HIPAA principles
+
+🔹 Milestone 2 — Client & Chart Management (Week 3)
+
+Features
+
+Create / edit client profiles
+
+Demographics & emergency contact
+
+Client list & chart dashboard
+
+Encrypted document uploads
+
+Chart access audit trail
+
+Outcome
+✔ Secure client record management
+
+🔹 Milestone 3 — Scheduling & Calendar (Week 4)
+
+Features
+
+Appointment creation
+
+Appointment types:
+
+Video
+
+Phone
+
+In-office
+
+Recurring appointments (basic)
+
+Time-zone awareness
+
+Email reminders
+
+Outcome
+✔ Fully functional scheduling system
+
+🔹 Milestone 4 — Telehealth (Week 5)
+
+Features
+
+Secure video sessions (Daily / Twilio)
+
+Audio-only sessions
+
+Appointment-based join links
+
+Session start/end logging
+
+No recording (MVP)
+
+Outcome
+✔ End-to-end telehealth delivery
+
+🔹 Milestone 5 — Clinical Documentation (Week 6)
+
+Features
+
+Progress note editor
+
+Draft / Signed status
+
+Notes linked to sessions
+
+Optional supervisor co-sign
+
+Basic version tracking
+
+Outcome
+✔ Compliant clinical documentation
+
+🔹 Milestone 6 — Assessments (Week 7)
+
+Features
+
+PHQ-9
+
+GAD-7
+
+Manual scoring
+
+Results stored in client chart
+
+Assessment → note linking
+
+Outcome
+✔ Outcome tracking enabled
+
+🔹 Milestone 7 — Task / To-Do System (Week 8)
+
+Features
+
+Clinician task dashboard
+
+Auto-generated tasks:
+
+Unsigned notes
+
+Incomplete assessments
+
+Manual task creation
+
+Due dates & priorities
+
+One-click navigation to related items
+
+Outcome
+✔ Compliance gaps visible and actionable
+
+🔹 Milestone 8 — Billing (Self-Pay Only) (Week 9)
+
+Features
+
+Session fee entry
+
+Invoice generation
+
+Stripe payment links
+
+Payment status tracking
+
+Outcome
+✔ Secure self-pay billing workflow
+
+🔹 Milestone 9 — Compliance Hardening & Audit (Week 10)
+
+Features
+
+Full audit logs:
+
+Logins
+
+Chart access
+
+Edits
+
+Permission validation
+
+Secure file storage review
+
+Incident logging (basic)
+
+Outcome
+✔ HIPAA-aligned operational readiness
+
+🔹 Milestone 10 — QA, UAT & Production Launch (Weeks 11–12)
+
+Activities
+
+Bug fixes
+
+Performance optimization
+
+Security checks
+
+User acceptance testing
+
+Production deployment
+
+Setup & deployment documentation
+
+Outcome
+✔ Production-ready MVP
+
+✅ MVP DELIVERABLE SUMMARY
+
+Web-based clinical MVP
+
+Secure Supabase backend
+
+Telehealth + scheduling
+
+Notes, assessments, tasks
+
+Self-pay billing
+
+Audit & compliance foundation
+
+Extensible architecture for Phase 2
