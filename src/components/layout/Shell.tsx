@@ -9,6 +9,7 @@ import {
     Users,
     CreditCard,
     ShieldCheck,
+    TrendingUp,
     Settings,
     LogOut,
     Bell,
@@ -24,6 +25,7 @@ const navItems = [
     { name: 'Patients', icon: Users, href: '/patients' },
     { name: 'Billing', icon: CreditCard, href: '/billing' },
     { name: 'Audit Log', icon: ShieldCheck, href: '/admin/audit' },
+    { name: 'Strategy', icon: TrendingUp, href: '/admin/strategy' },
 ];
 
 export function Sidebar({ className, onItemClick }: { className?: string, onItemClick?: () => void }) {
@@ -32,7 +34,7 @@ export function Sidebar({ className, onItemClick }: { className?: string, onItem
     return (
         <div className={cn("w-64 h-full bg-card border-r border-border flex flex-col", className)}>
             <div className="p-6">
-                <h1 className="text-2xl font-bold text-primary tracking-tight">BHOS</h1>
+                <h1 className="text-2xl font-bold text-primary tracking-tight">Ventally</h1>
                 <p className="text-xs text-muted-foreground uppercase tracking-widest mt-1">Clinical Workspace</p>
             </div>
 

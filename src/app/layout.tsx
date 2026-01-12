@@ -7,7 +7,7 @@ import { Shell } from "@/components/layout/Shell";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "BHOS | Clinical Workspace",
+  title: "Ventally | Clinical Workspace",
   description: "Next-generation EHR for modern clinicians",
 };
 

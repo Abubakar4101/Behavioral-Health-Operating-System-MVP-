@@ -134,7 +134,7 @@ export default function AuditLogPage() {
                 <div>
                     <h4 className="font-bold text-sm md:text-base text-primary mb-1">Compliance Verification</h4>
                     <p className="text-xs md:text-sm text-muted-foreground leading-relaxed">
-                        BHOS implements <strong>AES-256 encryption-at-rest</strong> and <strong>TLS 1.3 in-transit</strong>. Every clinician action generates a cryptographically signed event stored in our immutable ledger, ensuring 100% audit readiness for HIPAA, SOC2, and state-level compliance requirements.
+                        Ventally implements <strong>AES-256 encryption-at-rest</strong> and <strong>TLS 1.3 in-transit</strong>. Every clinician action generates a cryptographically signed event stored in our immutable ledger, ensuring 100% audit readiness for HIPAA, SOC2, and state-level compliance requirements.
                     </p>
                 </div>
             </div>
