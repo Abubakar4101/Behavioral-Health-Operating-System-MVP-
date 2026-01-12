@@ -75,7 +75,35 @@ export default function BillingPage() {
                         </div>
                     </div>
 
-                    <div className="p-6 md:p-8 bg-zinc-900/50">
+                    <div className="p-6 md:p-8 bg-zinc-900/50 space-y-8">
+                        {/* Invoice State Machine Tracker */}
+                        <div className="relative pt-4">
+                            <div className="absolute top-1/2 left-0 w-full h-0.5 bg-white/5 -translate-y-1/2" />
+                            <div className="flex justify-between relative z-10">
+                                {[
+                                    { label: 'Draft', status: 'unbilled' },
+                                    { label: 'Sent', status: 'invoice_sent' },
+                                    { label: 'Paid', status: 'paid' }
+                                ].map((step, idx) => {
+                                    const isCompleted = (billingStatus === 'paid') || (billingStatus === 'invoice_sent' && step.status !== 'paid') || (billingStatus === step.status);
+                                    const isActive = billingStatus === step.status;
+
+                                    return (
+                                        <div key={step.label} className="flex flex-col items-center gap-2">
+                                            <div className={cn(
+                                                "w-4 h-4 rounded-full border-2 transition-all duration-500",
+                                                isCompleted ? "bg-primary border-primary shadow-[0_0_10px_rgba(var(--primary),0.5)]" : "bg-zinc-900 border-white/10"
+                                            )} />
+                                            <span className={cn(
+                                                "text-[9px] font-bold uppercase tracking-wider",
+                                                isActive ? "text-primary" : "text-muted-foreground"
+                                            )}>{step.label}</span>
+                                        </div>
+                                    );
+                                })}
+                            </div>
+                        </div>
+
                         {billingStatus === 'unbilled' ? (
                             <button
                                 onClick={generateInvoice}
